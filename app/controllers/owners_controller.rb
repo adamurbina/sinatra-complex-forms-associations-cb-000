@@ -31,5 +31,6 @@ class OwnersController < ApplicationController
 
   patch '/owners/:id' do
     binding.pry
+    "Hello World"
   end
 end
