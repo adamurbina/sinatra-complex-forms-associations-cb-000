@@ -6,7 +6,7 @@ class OwnersController < ApplicationController
   end
 
   patch '/owners/:id' do
-    binding.pry
+    #binding.pry
     "Hello World"
   end
 
