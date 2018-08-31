@@ -15,6 +15,7 @@ class PetsController < ApplicationController
 
     if !(params[:owner_name] == "")
       @owner = Owner.find_by_name(params[:owner_name])
+      @owner.pets << @pet
     end
     redirect to "pets/#{@pet.id}"
   end
