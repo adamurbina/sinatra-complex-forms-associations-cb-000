@@ -5,6 +5,11 @@ class OwnersController < ApplicationController
     erb :'/owners/index'
   end
 
+  patch '/owners/:id' do
+    binding.pry
+    "Hello World"
+  end
+
   get '/owners/new' do
     @pets = Pet.all
     erb :'/owners/new'
@@ -29,8 +34,5 @@ class OwnersController < ApplicationController
     erb :'/owners/show'
   end
 
-  patch '/owners/:id' do
-    binding.pry
-    "Hello World"
-  end
+
 end
