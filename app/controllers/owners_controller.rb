@@ -11,7 +11,6 @@ class OwnersController < ApplicationController
   end
 
   post '/owners' do
-    binding.pry
     @owner = Owner.create(params[:owner])
 
     if !params["pet"]["name"].empty?
@@ -31,6 +30,6 @@ class OwnersController < ApplicationController
   end
 
   patch '/owners/:id' do
-
+    binding.pry
   end
 end
